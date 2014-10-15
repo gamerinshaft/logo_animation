@@ -1,0 +1,59 @@
+@charset "UTF-8";
+/* #! scss */
+/*---------------------------ボールを動かす---------------------------*/
+.hoge {
+  -webkit-transform: rotate(13px);
+  -moz-transform: rotate(13px);
+  -ms-transform: rotate(13px);
+  -o-transform: rotate(13px);
+  transform: rotate(13px);
+}
+
+@-webkit-keyframes moveBall {
+  0% {
+    left: 10px;
+  }
+
+  10% {
+    right: 100px;
+  }
+}
+@-moz-keyframes moveBall {
+  0% {
+    left: 10px;
+  }
+
+  10% {
+    right: 100px;
+  }
+}
+@-ms-keyframes moveBall {
+  0% {
+    left: 10px;
+  }
+
+  10% {
+    right: 100px;
+  }
+}
+@-o-keyframes moveBall {
+  0% {
+    left: 10px;
+  }
+
+  10% {
+    right: 100px;
+  }
+}
+@keyframes moveBall {
+  0% {
+    left: 10px;
+  }
+
+  10% {
+    right: 100px;
+  }
+}
+/*-------------------------------------------------------------------*/
+/*---------------------------ボールの色を変更---------------------------*/
+/*-------------------------------------------------------------------*/

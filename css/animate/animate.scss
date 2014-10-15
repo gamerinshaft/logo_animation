@@ -1,0 +1,68 @@
+@import "../mixin/mixin.scss";
+/*---------------------------ボールを動かす---------------------------*/
+.hoge{
+  @include css3(transform, rotate(13px));
+}
+@include css3(keyframes, moveBall){
+  0%{
+    left: 10px;
+  }
+  10%{
+    right: 100px;
+  }
+}
+
+
+// .hoge
+  // @include css3(transition,0.5s)
+
+
+
+// @-moz-keyframes ball-move
+//   0%
+//     left: 0px
+//   100%
+//     left: 100%
+
+// @-webkit-keyframes ball-move
+//   0%
+//     left: 0px
+//   100%
+//     left: 100%
+// @-o-keyframes ball-move
+//   0%
+//     left: 0px
+//   100%
+//     left: 100%
+// @-ms-keyframes ball-move
+//   0%
+//     left: 0px
+//   100%
+//     left: 100%
+/*-------------------------------------------------------------------*/
+
+/*---------------------------ボールの色を変更---------------------------*/
+// @-moz-keyframes ball-color
+//   0%
+//     background-color: #bfea95
+//   100%
+//     background-color: #2b0e47
+// @-webkit-keyframes ball-color
+//   0%
+//     background-color: #bfea95
+//   100%
+//     background-color: #2b0e47
+// @-o-keyframes ball-color
+//   0%
+//     background-color: #bfea95
+
+//   100%
+//     background-color: #2b0e47
+// @-ms-keyframes ball-color
+//   0%
+//     background-color: #bfea95
+
+//   100%
+//     background-color: #2b0e47
+
+/*-------------------------------------------------------------------*/

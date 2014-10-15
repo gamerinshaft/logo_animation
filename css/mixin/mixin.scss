@@ -1,0 +1,109 @@
+/* #! scss */
+$official:true;            //Official
+$support-for-webkit:true;  //Chrome, Safari
+$support-for-mozilla:true; //Firefox
+$support-for-ie:true;      //IE
+$support-for-o:true;       //Opera
+// //再生時間
+$default-animation-duration       : 0.5s !default;
+// //実行までの待ち時間
+$default-animation-delay          : 0    !default;
+// //実行回数(number | infinite)
+$default-animation-iteration-count: 1    !default;
+// //タイミング(ease | liner | ease-in | ease-out | ease-in-out | cubic-bezier)
+$default-animation-timing-function: ease !default;
+// //反復の有無(normal | alternate)
+$default-animation-direction: normal     !default;
+// //実行前や実行後のスタイル指定(none | forwards | backwards | both)
+$default-animation-fill-mode: none       !default;
+
+@mixin css3($property, $value...){
+  @if($property == keyframes){
+    @if $support-for-webkit{
+      @-webkit-keyframes $value{
+        @content;
+      }
+    }
+    @if $support-for-mozilla{
+      @-moz-keyframes $value{
+        @content;
+      }
+    }
+    @if $support-for-ie{
+      @-ms-keyframes $value{
+        @content;
+      }
+    }
+    @if $support-for-o{
+      @-o-keyframes $value{
+        @content;
+      }
+    }
+    @keyframes $value{
+      @content;
+    }
+  }
+  @else{
+    @each $prefix in -webkit-, -moz-, -ms-, -o-, '' {
+       #{$prefix}#{$property}: $value;
+    }
+  }
+}
+
+
+@mixin animation (
+  $name     :none,
+  $duration :$default-animation-duration,
+  $delay    :$default-animation-delay,
+  $count    :$default-animation-iteration-count,
+  $function :$default-animation-timing-function,
+  $direction:$default-animation-direction,
+  $fillMode :$default-animation-fill-mode
+){
+   @include css3(animation, $name $duration $function $delay $count $direction);
+}
+
+@mixin keyframes($name) {
+  @include css3(keyframes, $name) {
+        @content;
+  }
+}
+
+// @include keyframes(sample) {
+//    $top:0px;
+//    $left:0px;
+
+//    @each $step in 0 20 25 60 80 100 {
+//     $top:0px + ($step * 2);
+//     $left:0px + ($step * 2);
+
+//     #{$step + 0%} {
+//       top:$top;
+//       left:$left;
+//     }
+//   }
+// }
+
+// %absolute {
+//     position:absolute;
+//     top:0;
+//     left:0;
+// }
+
+// div {
+//   @extend %absolute;
+//   right:0;
+//   bottom:0;
+
+//   p {
+//    @extend %absolute;
+//     background:pink;
+//     font-size:36px;
+//     text-align:center;
+//      padding:0 1em;
+//   }
+//   &:hover p {
+//     @include animation(sample, 1s, 0, infinite, ease, alternate);
+//   }
+// }
+
