@@ -42,14 +42,18 @@ $default-animation-fill-mode: none       !default;
     @keyframes $value{
       @content;
     }
-  }
-  @else{
+  }@else{
     @each $prefix in -webkit-, -moz-, -ms-, -o-, '' {
        #{$prefix}#{$property}: $value;
     }
   }
 }
 
+@mixin gradient($value){
+  @each $prefix in -webkit-, -moz-, -ms-, -o-, '' {
+      background: #{$prefix}linear-gradient($value);
+    }
+}
 
 @mixin animation (
   $name     :none,
