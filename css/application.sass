@@ -53,6 +53,20 @@ body
   @include css3(background-size, 300% 300%)
   @include css3(background-clip, text)
   @include animation(shimmer, 5s, 0, infinite, ease, normal, none)
+
+.grd1
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ed8080', endColorstr='#5eb524',GradientType=1 ) /* IE6-9 */
+  @include gradient((left, #aa0000 0%, #aa5500 4.3%, #aaaa00 8.6%, #55aa00 12.9%, #00aa00 17.2%, #00aa55 21.5%, #00aaaa 25.8%, #0055aa 30.1%, #0000aa 34.4%, #5500aa 38.7%, #aa00aa 43%, #aa0055 47.3%, #aa0000 51.6%, #aa5500 55.9%, #aaaa00 60.2%, #55aa00 64.5%, #00aa00 68.8%, #00aa55 73.1%, #00aaaa 77.4%, #0055aa 81.7%, #0000aa 86%, #5500aa 90.3%, #aa00aa 94.6%, #aa0055 100%))
+  @include css3(background-size, 300% 300%)
+  @include css3(background-clip, text)
+  @include animation(shimmer, 5s, 0, infinite, ease, normal, none)
+.grd
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ed8080', endColorstr='#5eb524',GradientType=1 ) /* IE6-9 */
+  @include gradient((left, #aa0000  0%, #aa5500  4%, #aaaa00  9%, #55aa00 13%, #00aa00 17%, #00aa55 22%, #00aaaa 26%, #0055aa 30%, #0000aa 34%, #5500aa 39%, #aa00aa 43%, #aa0055 47%, #aa0000 52%, #aa5500 56%, #aaaa00 60%, #55aa00 65%, #00aa00 69%, #00aa55 73%, #00aaaa 77%, #0055aa 82%, #0000aa 86%, #5500aa 90%, #aa00aa 95%, #aa0055 100%))
+  @include css3(background-size, 800% 800%)
+  @include css3(background-clip, text)
+  @include animation(shimmer, 15s, 0, infinite, ease, normal, none)
+
 .words
   width: 980px
   height: 100%
@@ -565,4 +579,173 @@ body
   top: 155px
   left: 441px
   background-color: rgb(57,131,86)
+
+//------------ カラーチャート--------------
+// -------------
+// 白・黒・灰色
+// #555555   #b4b4b4   #ffffff
+// #4a4a4a   #aaaaaa   #f9f9f9
+// #3f3f3f   #9f9f9f   #f4f4f4
+// #353535   #949494   #efefef
+// #2a2a2a   #8a8a8a   #e9e9e9
+// #1f1f1f   #7f7f7f   #dfdfdf
+// #151515   #747474   #d4d4d4
+// #0a0a0a   #6a6a6a   #c9c9c9
+// #000000   #5f5f5f   #bfbfbf
+// 赤色
+// #fcf8f8   #fdf7f7   #fff4f4
+// #f8f1f1   #fceded   #ffeaea
+// #f1e2e2   #f8dcdc   #ffd5d5
+// #e2c7c7   #f1b8b8   #ffaaaa
+// #d5aaaa   #ea9595   #ff8080
+// #c78d8d   #e27272   #ff5555
+// #b87272   #dc4e4e   #ff2b2b
+// #aa5555   #d52b2b   #ff0000
+// #8d4747   #b12323   #d50000
+// #723838   #8d1d1d   #aa0000
+// #552b2b   #6a1515   #800000
+// #381d1d   #470e0e   #550000
+// 茶・橙色
+// #fcfaf8   #fdfaf7   #fffaf4
+// #f8f4f1   #fcf4ed   #fff4ea
+// #f1eae2   #f8eadc   #ffead5
+// #e2d5c7   #f1d5b8   #ffd5aa
+// #d5bfaa   #eabf95   #ffbf80
+// #c7aa8d   #e2aa72   #ffaa55
+// #b89572   #dc954e   #ff952b
+// #aa8055   #d5802b   #ff8000
+// #8d6a47   #b16a23   #d56a00
+// #725538   #8d551d   #aa5500
+// #55402b   #6a4015   #804000
+// #382b1d   #472b0e   #552b00
+// 黄色
+// #fcfcf8   #fdfdf7   #fffff4
+// #f8f8f1   #fcfced   #ffffea
+// #f1f1e2   #f8f8dc   #ffffd5
+// #e2e2c7   #f1f1b8   #ffffaa
+// #d5d5aa   #eaea95   #ffff80
+// #c7c78d   #e2e272   #ffff55
+// #b8b872   #dcdc4e   #ffff2b
+// #aaaa55   #d5d52b   #ffff00
+// #8d8d47   #b1b123   #d5d500
+// #727238   #8d8d1d   #aaaa00
+// #55552b   #6a6a15   #808000
+// #38381d   #47470e   #555500
+// 黄緑色
+// #fafcf8   #fafdf7   #fafff4
+// #f4f8f1   #f4fced   #f4ffea
+// #eaf1e2   #eaf8dc   #eaffd5
+// #d5e2c7   #d5f1b8   #d5ffaa
+// #bfd5aa   #bfea95   #bfff80
+// #aac78d   #aae272   #aaff55
+// #95b872   #95dc4e   #95ff2b
+// #80aa55   #80d52b   #80ff00
+// #6a8d47   #6ab123   #6ad500
+// #557238   #558d1d   #55aa00
+// #40552b   #406a15   #408000
+// #2b381d   #2b470e   #2b5500
+// 緑色
+// #f8fcf8   #f7fdf7   #f4fff4
+// #f1f8f1   #edfced   #eaffea
+// #e2f1e2   #dcf8dc   #d5ffd5
+// #c7e2c7   #b8f1b8   #aaffaa
+// #aad5aa   #95ea95   #80ff80
+// #8dc78d   #72e272   #55ff55
+// #72b872   #4edc4e   #2bff2b
+// #55aa55   #2bd52b   #00ff00
+// #478d47   #23b123   #00d500
+// #387238   #1d8d1d   #00aa00
+// #2b552b   #156a15   #008000
+// #1d381d   #0e470e   #005500
+// 青緑色
+// #f8fcfa   #f7fdfa   #f4fffa
+// #f1f8f4   #edfcf4   #eafff4
+// #e2f1ea   #dcf8ea   #d5ffea
+// #c7e2d5   #b8f1d5   #aaffd5
+// #aad5bf   #95eabf   #80ffbf
+// #8dc7aa   #72e2aa   #55ffaa
+// #72b895   #4edc95   #2bff95
+// #55aa80   #2bd580   #00ff80
+// #478d6a   #23b16a   #00d56a
+// #387255   #1d8d55   #00aa55
+// #2b5540   #156a40   #008040
+// #1d382b   #0e472b   #00552b
+// 緑青色
+// #f8fcfc   #f7fdfd   #f4ffff
+// #f1f8f8   #edfcfc   #eaffff
+// #e2f1f1   #dcf8f8   #d5ffff
+// #c7e2e2   #b8f1f1   #aaffff
+// #aad5d5   #95eaea   #80ffff
+// #8dc7c7   #72e2e2   #55ffff
+// #72b8b8   #4edcdc   #2bffff
+// #55aaaa   #2bd5d5   #00ffff
+// #478d8d   #23b1b1   #00d5d5
+// #387272   #1d8d8d   #00aaaa
+// #2b5555   #156a6a   #008080
+// #1d3838   #0e4747   #005555
+// 水色
+// #f8fafc   #f7fafd   #f4faff
+// #f1f4f8   #edf4fc   #eaf4ff
+// #e2eaf1   #dceaf8   #d5eaff
+// #c7d5e2   #b8d5f1   #aad5ff
+// #aabfd5   #95bfea   #80bfff
+// #8daac7   #72aae2   #55aaff
+// #7295b8   #4e95dc   #2b95ff
+// #5580aa   #2b80d5   #0080ff
+// #476a8d   #236ab1   #006ad5
+// #385572   #1d558d   #0055aa
+// #2b4055   #15406a   #004080
+// #1d2b38   #0e2b47   #002b55
+// 青・紺色
+// #f8f8fc   #f7f7fd   #f4f4ff
+// #f1f1f8   #ededfc   #eaeaff
+// #e2e2f1   #dcdcf8   #d5d5ff
+// #c7c7e2   #b8b8f1   #aaaaff
+// #aaaad5   #9595ea   #8080ff
+// #8d8dc7   #7272e2   #5555ff
+// #7272b8   #4e4edc   #2b2bff
+// #5555aa   #2b2bd5   #0000ff
+// #47478d   #2323b1   #0000d5
+// #383872   #1d1d8d   #0000aa
+// #2b2b55   #15156a   #000080
+// #1d1d38   #0e0e47   #000055
+// 青紫色
+// #faf8fc   #faf7fd   #faf4ff
+// #f4f1f8   #f4edfc   #f4eaff
+// #eae2f1   #eadcf8   #ead5ff
+// #d5c7e2   #d5b8f1   #d5aaff
+// #bfaad5   #bf95ea   #bf80ff
+// #aa8dc7   #aa72e2   #aa55ff
+// #9572b8   #954edc   #952bff
+// #8055aa   #802bd5   #8000ff
+// #6a478d   #6a23b1   #6a00d5
+// #553872   #551d8d   #5500aa
+// #402b55   #40156a   #400080
+// #2b1d38   #2b0e47   #2b0055
+// 紫色
+// #fcf8fc   #fdf7fd   #fff4ff
+// #f8f1f8   #fcedfc   #ffeaff
+// #f1e2f1   #f8dcf8   #ffd5ff
+// #e2c7e2   #f1b8f1   #ffaaff
+// #d5aad5   #ea95ea   #ff80ff
+// #c78dc7   #e272e2   #ff55ff
+// #b872b8   #dc4edc   #ff2bff
+// #aa55aa   #d52bd5   #ff00ff
+// #8d478d   #b123b1   #d500d5
+// #723872   #8d1d8d   #aa00aa
+// #552b55   #6a156a   #800080
+// #381d38   #470e47   #550055
+// 赤紫・桃色
+// #fcf8fa   #fdf7fa   #fff4fa
+// #f8f1f4   #fcedf4   #ffeaf4
+// #f1e2ea   #f8dcea   #ffd5ea
+// #e2c7d5   #f1b8d5   #ffaad5
+// #d5aabf   #ea95bf   #ff80bf
+// #c78daa   #e272aa   #ff55aa
+// #b87295   #dc4e95   #ff2b95
+// #aa5580   #d52b80   #ff0080
+// #8d476a   #b1236a   #d5006a
+// #723855   #8d1d55   #aa0055
+// #552b40   #6a1540   #800040
+// #381d2b   #470e2b   #55002b
 

@@ -161,6 +161,54 @@ body {
   animation: shimmer 5s ease 0 infinite normal;
 }
 
+.grd1 {
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ed8080', endColorstr='#5eb524',GradientType=1 );
+  background: -webkit-linear-gradient(left, #aa0000 0%, #aa5500 4.3%, #aaaa00 8.6%, #55aa00 12.9%, #00aa00 17.2%, #00aa55 21.5%, #00aaaa 25.8%, #0055aa 30.1%, #0000aa 34.4%, #5500aa 38.7%, #aa00aa 43%, #aa0055 47.3%, #aa0000 51.6%, #aa5500 55.9%, #aaaa00 60.2%, #55aa00 64.5%, #00aa00 68.8%, #00aa55 73.1%, #00aaaa 77.4%, #0055aa 81.7%, #0000aa 86%, #5500aa 90.3%, #aa00aa 94.6%, #aa0055 100%);
+  background: -moz-linear-gradient(left, #aa0000 0%, #aa5500 4.3%, #aaaa00 8.6%, #55aa00 12.9%, #00aa00 17.2%, #00aa55 21.5%, #00aaaa 25.8%, #0055aa 30.1%, #0000aa 34.4%, #5500aa 38.7%, #aa00aa 43%, #aa0055 47.3%, #aa0000 51.6%, #aa5500 55.9%, #aaaa00 60.2%, #55aa00 64.5%, #00aa00 68.8%, #00aa55 73.1%, #00aaaa 77.4%, #0055aa 81.7%, #0000aa 86%, #5500aa 90.3%, #aa00aa 94.6%, #aa0055 100%);
+  background: -ms-linear-gradient(left, #aa0000 0%, #aa5500 4.3%, #aaaa00 8.6%, #55aa00 12.9%, #00aa00 17.2%, #00aa55 21.5%, #00aaaa 25.8%, #0055aa 30.1%, #0000aa 34.4%, #5500aa 38.7%, #aa00aa 43%, #aa0055 47.3%, #aa0000 51.6%, #aa5500 55.9%, #aaaa00 60.2%, #55aa00 64.5%, #00aa00 68.8%, #00aa55 73.1%, #00aaaa 77.4%, #0055aa 81.7%, #0000aa 86%, #5500aa 90.3%, #aa00aa 94.6%, #aa0055 100%);
+  background: -o-linear-gradient(left, #aa0000 0%, #aa5500 4.3%, #aaaa00 8.6%, #55aa00 12.9%, #00aa00 17.2%, #00aa55 21.5%, #00aaaa 25.8%, #0055aa 30.1%, #0000aa 34.4%, #5500aa 38.7%, #aa00aa 43%, #aa0055 47.3%, #aa0000 51.6%, #aa5500 55.9%, #aaaa00 60.2%, #55aa00 64.5%, #00aa00 68.8%, #00aa55 73.1%, #00aaaa 77.4%, #0055aa 81.7%, #0000aa 86%, #5500aa 90.3%, #aa00aa 94.6%, #aa0055 100%);
+  background: linear-gradient(left, #aa0000 0%, #aa5500 4.3%, #aaaa00 8.6%, #55aa00 12.9%, #00aa00 17.2%, #00aa55 21.5%, #00aaaa 25.8%, #0055aa 30.1%, #0000aa 34.4%, #5500aa 38.7%, #aa00aa 43%, #aa0055 47.3%, #aa0000 51.6%, #aa5500 55.9%, #aaaa00 60.2%, #55aa00 64.5%, #00aa00 68.8%, #00aa55 73.1%, #00aaaa 77.4%, #0055aa 81.7%, #0000aa 86%, #5500aa 90.3%, #aa00aa 94.6%, #aa0055 100%);
+  -webkit-background-size: 300% 300%;
+  -moz-background-size: 300% 300%;
+  -ms-background-size: 300% 300%;
+  -o-background-size: 300% 300%;
+  background-size: 300% 300%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -ms-background-clip: text;
+  -o-background-clip: text;
+  background-clip: text;
+  -webkit-animation: shimmer 5s ease 0 infinite normal;
+  -moz-animation: shimmer 5s ease 0 infinite normal;
+  -ms-animation: shimmer 5s ease 0 infinite normal;
+  -o-animation: shimmer 5s ease 0 infinite normal;
+  animation: shimmer 5s ease 0 infinite normal;
+}
+
+.grd {
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ed8080', endColorstr='#5eb524',GradientType=1 );
+  background: -webkit-linear-gradient(left, #aa0000 0%, #aa5500 4%, #aaaa00 9%, #55aa00 13%, #00aa00 17%, #00aa55 22%, #00aaaa 26%, #0055aa 30%, #0000aa 34%, #5500aa 39%, #aa00aa 43%, #aa0055 47%, #aa0000 52%, #aa5500 56%, #aaaa00 60%, #55aa00 65%, #00aa00 69%, #00aa55 73%, #00aaaa 77%, #0055aa 82%, #0000aa 86%, #5500aa 90%, #aa00aa 95%, #aa0055 100%);
+  background: -moz-linear-gradient(left, #aa0000 0%, #aa5500 4%, #aaaa00 9%, #55aa00 13%, #00aa00 17%, #00aa55 22%, #00aaaa 26%, #0055aa 30%, #0000aa 34%, #5500aa 39%, #aa00aa 43%, #aa0055 47%, #aa0000 52%, #aa5500 56%, #aaaa00 60%, #55aa00 65%, #00aa00 69%, #00aa55 73%, #00aaaa 77%, #0055aa 82%, #0000aa 86%, #5500aa 90%, #aa00aa 95%, #aa0055 100%);
+  background: -ms-linear-gradient(left, #aa0000 0%, #aa5500 4%, #aaaa00 9%, #55aa00 13%, #00aa00 17%, #00aa55 22%, #00aaaa 26%, #0055aa 30%, #0000aa 34%, #5500aa 39%, #aa00aa 43%, #aa0055 47%, #aa0000 52%, #aa5500 56%, #aaaa00 60%, #55aa00 65%, #00aa00 69%, #00aa55 73%, #00aaaa 77%, #0055aa 82%, #0000aa 86%, #5500aa 90%, #aa00aa 95%, #aa0055 100%);
+  background: -o-linear-gradient(left, #aa0000 0%, #aa5500 4%, #aaaa00 9%, #55aa00 13%, #00aa00 17%, #00aa55 22%, #00aaaa 26%, #0055aa 30%, #0000aa 34%, #5500aa 39%, #aa00aa 43%, #aa0055 47%, #aa0000 52%, #aa5500 56%, #aaaa00 60%, #55aa00 65%, #00aa00 69%, #00aa55 73%, #00aaaa 77%, #0055aa 82%, #0000aa 86%, #5500aa 90%, #aa00aa 95%, #aa0055 100%);
+  background: linear-gradient(left, #aa0000 0%, #aa5500 4%, #aaaa00 9%, #55aa00 13%, #00aa00 17%, #00aa55 22%, #00aaaa 26%, #0055aa 30%, #0000aa 34%, #5500aa 39%, #aa00aa 43%, #aa0055 47%, #aa0000 52%, #aa5500 56%, #aaaa00 60%, #55aa00 65%, #00aa00 69%, #00aa55 73%, #00aaaa 77%, #0055aa 82%, #0000aa 86%, #5500aa 90%, #aa00aa 95%, #aa0055 100%);
+  -webkit-background-size: 800% 800%;
+  -moz-background-size: 800% 800%;
+  -ms-background-size: 800% 800%;
+  -o-background-size: 800% 800%;
+  background-size: 800% 800%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -ms-background-clip: text;
+  -o-background-clip: text;
+  background-clip: text;
+  -webkit-animation: shimmer 15s ease 0 infinite normal;
+  -moz-animation: shimmer 15s ease 0 infinite normal;
+  -ms-animation: shimmer 15s ease 0 infinite normal;
+  -o-animation: shimmer 15s ease 0 infinite normal;
+  animation: shimmer 15s ease 0 infinite normal;
+}
+
 .words {
   width: 980px;
   height: 100%;
